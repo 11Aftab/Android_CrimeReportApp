@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c7c1c1"
+    tools:context="come.crimeReport.DashBoard">
+
+    <RelativeLayout
+        android:background="#9e8637"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true" />
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/logout"
+            android:src="@drawable/ic_power"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/crime"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+
+
+        <Button
+            android:id="@+id/bt_crimeDetails"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_round_corner_button"
+            android:padding="10dp"
+            android:text="Crime Details"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/bt_miss"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_round_corner_button"
+            android:padding="10dp"
+            android:text="mISSING dETAILS"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/bt_crimeList"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_round_corner_button"
+            android:padding="10dp"
+            android:text="Crime List"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/bt_missList"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_round_corner_button"
+            android:padding="10dp"
+            android:text="Missing List"
+            android:textColor="#fff" />
+    <Button
+        android:id="@+id/bt_cpass"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/background_round_corner_button"
+        android:padding="10dp"
+        android:text="Change Password"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/bt_profile"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+
+        android:background="@drawable/background_round_corner_button"
+
+        android:text="Profile"
+        android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

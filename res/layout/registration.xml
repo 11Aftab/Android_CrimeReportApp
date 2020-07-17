@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:hint="Enter Name"
+                    android:background="@drawable/background_round_corner_edittext"
+                    android:id="@+id/et_name"/>
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Enter Email"
+                    android:background="@drawable/background_round_corner_edittext"
+                    android:id="@+id/et_email"/>
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/background_round_corner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Enter P_assword"
+                    android:id="@+id/et_pass"/>
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/background_round_corner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Enter Confirm P_assword"
+                    android:id="@+id/et_cnf"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Gender"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/rb_g"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/rb_m"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/rb_f"
+                        android:text="Female" />
+                </RadioGroup>
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/background_round_corner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Enter P_hone no"
+                    android:id="@+id/et_ph"/>
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/background_round_corner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Enter Address"
+                    android:id="@+id/et_add"/>
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:background="@drawable/background_round_corner_button"
+                    android:layout_gravity="center"
+                    android:id="@+id/bt_reg"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

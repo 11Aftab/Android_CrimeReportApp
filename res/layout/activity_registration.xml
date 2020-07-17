@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context="come.crimeReport.Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Registration:"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_round_corner_edittext"
+        android:hint="Enter Name"
+        android:id="@+id/et_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_round_corner_edittext"
+        android:hint="Enter Email"
+        android:id="@+id/et_email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_round_corner_edittext"
+        android:hint="Enter Password"
+        android:id="@+id/et_pass"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_round_corner_edittext"
+        android:hint="Enter Confirm Password"
+        android:id="@+id/et_cnf"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:hint="Gender"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+    <RadioGroup
+        android:id="@+id/rb_g"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_m"
+            android:layout_width="wrap_content"
+            android:text="male"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_f"
+            android:layout_width="wrap_content"
+            android:text="female"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_round_corner_edittext"
+        android:hint="Enter Phone No"
+        android:id="@+id/et_ph"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_round_corner_edittext"
+        android:hint="Enter Address"
+        android:id="@+id/et_add"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#fff"
+        android:background="@drawable/background_round_corner_button"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/bt_reg"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

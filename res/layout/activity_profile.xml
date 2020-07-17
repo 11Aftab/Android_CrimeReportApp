@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#c7c1c1"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#9e8637"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true" />
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/logout"
+            android:src="@drawable/ic_power"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :-"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_round_corner_edittext"
+                android:hint="Enter Name"
+                android:padding="5dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email :-"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_round_corner_edittext"
+                android:hint="Enter Email"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Gender"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/rb_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="male" />
+
+                <RadioButton
+                    android:id="@+id/rb_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="female" />
+            </RadioGroup>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No :-"/>
+
+            <EditText
+                android:id="@+id/et_ph"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_round_corner_edittext"
+                android:hint="Enter P_hone no"
+                android:padding="5dp" />
+            <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address :-"/>
+
+
+            <EditText
+                android:id="@+id/et_add"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_round_corner_edittext"
+                android:hint="Enter Address"
+                android:padding="5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/bt_cpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_round_corner_button"
+                    android:padding="10dp"
+                    android:text="Change Password"
+                    android:textColor="#fff" />
+
+                <ImageButton
+                    android:layout_centerInParent="true"
+                    android:id="@+id/bt_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/edit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp">
+
+
+                <Button
+                    android:id="@+id/bt_crimeDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_round_corner_button"
+                    android:padding="10dp"
+                    android:text="Crime Details"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/bt_miss"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_round_corner_button"
+                    android:padding="10dp"
+                    android:text="mISSING dETAILS"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

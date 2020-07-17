@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CrimeReport</string>
+    <string name="internectconnectionerror">No internet connections.</string>
+    <string name="networkerror">Server error.</string>
+
+
+</resources>
